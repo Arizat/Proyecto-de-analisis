@@ -30,3 +30,6 @@ rsconnect/
 .DS.Store
 Thumbs.db
 *.sh
+
+#Archivos auxiliares el documento
+"documento/Predicción de la deserción de clientes_files/"

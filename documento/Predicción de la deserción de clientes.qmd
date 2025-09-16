@@ -1,0 +1,193 @@
+---
+title: "Proyecto-de-analisis"
+author: "-.-"
+format: html
+editor: visual
+---
+
+### 1. **Portada** 
+
+Especialización en Ciencia de Datos y Análitica
+
+Predicción de la deserción de clientes en empresas de telecomunicaciones mediante un modelo de regresión logística
+
+Leydi Tamara Ariza Cabrejo
+
+Tutor(a)
+
+Bogotá D.C. Diciembre, 2025
+
+### 2. **Resumen / Abstract**
+
+**Resumen (en español):** 150–250 palabras. Incluye objetivo, metodología, resultados principales y conclusiones.
+
+**Palabras clave:** deserción de clientes, telecomunicaciones, regresión logística, churn telecomunicaciones.
+
+**Abstract (en inglés)** y sus respectivas keywords.
+
+### 3. **Tabla de contenido**
+
+Incluye índice de tablas, figuras y anexos si es necesario.
+
+### 4. **Introducción**
+
+-   Planteamiento del problema
+
+    Justificación
+
+-   Para las empresas de telecomunicaciones la deserción de clientes es un problema estratégico y financiero debido a la fuerte competencia, los cambios de tarifas y la facilidad de migración a otros operadores. Su justificación se basó en tres áreas principales que son financiero y de negocio, ventaja competitiva y personalización y optimización de recursos con toma de decisiones. Contar con un modelo predictivo permite anticipar la probabilidad de abandono ofreciendo a la empresa la oportunidad de diseñar estrategias personalizadas de retención, optimización de recursos y mejora de la experiencia del cliente.
+    Al predecir el churn, las empresas pueden enfocar sus recursos de manera más eficiente en los clientes con mayor riesgo de abandono, reduciendo costos y aumentando la rentabilidad a largo plazo.
+    En última instancia, este enfoque permite a la empresa pasar de una estrategia reactiva a una proactiva, asegurando su crecimiento y sostenibilidad a largo plazo.
+
+    Objetivos (General y específicos)
+
+    Alcance y limitaciones del estudio
+
+### 5. **Marco teórico y conceptual**
+
+Fundamentos de analítica de datos
+
+Herramientas y técnicas utilizadas (e.g., Machine Learning, minería de datos, visualización, etc.)
+
+Revisión de estudios previos
+
+Definición de términos clave
+
+### 6. **Metodología**
+
+Este estudio adopta un enfoque metodológico **cuantitativo**, con un diseño de tipo **predictivo**, cuyo objetivo principal es construir un modelo capaz de anticipar la pérdida de clientes (churn) en una empresa del sector de telecomunicaciones, a partir de variables asociadas a comportamiento, servicios contratados y características demográficas.
+
+La base de datos utilizada proviene de una fuente pública, específicamente del repositorio de Kaggle: *“Proyecto 2: Pérdida de clientes en Telco”*, disponible en el siguiente enlace:\
+<https://www.kaggle.com/datasets/datacertlaboratoria/sql-proyecto-2-prdida-de-clientes-en-telco>. Esta base contiene registros históricos de clientes de una empresa de telecomunicaciones, con variables que permiten caracterizar tanto el servicio recibido como el estado actual del cliente (activo o perdido).
+
+Durante la etapa de preprocesamiento se realizó una exploración inicial de la calidad de los datos, identificando registros incompletos, inconsistencias y datos atípicos. Se eliminaron un total de **21 registros** con valores faltantes críticos que no podían ser imputados de forma confiable. Asimismo, se realizaron **36 imputaciones** de valores faltantes mediante técnicas simples como la media (para variables numéricas) y la moda (para variables categóricas), en aquellos casos donde el porcentaje de datos faltantes era menor al 5%. También se transformaron variables categóricas a factores y se codificaron adecuadamente para el análisis en R.
+
+El análisis predictivo se fundamentó en el uso de **modelado estadístico** y **algoritmos de aprendizaje automático**, específicamente mediante la **regresión logística**, dada su capacidad para modelar una variable binaria dependiente (churn: sí/no). Esta técnica permite interpretar la influencia de distintas variables independientes sobre la probabilidad de que un cliente abandone la empresa. El rendimiento del modelo fue evaluado utilizando métricas como precisión, sensibilidad, especificidad y el área bajo la curva ROC (AUC).
+
+Para el desarrollo del proyecto se utilizaron herramientas del ecosistema R. El análisis de datos, visualización y modelado se realizaron en **R**, mientras que la interfaz de usuario para la presentación interactiva de resultados fue desarrollada en **Shiny**, permitiendo generar una aplicación web funcional que facilita la exploración del modelo y sus predicciones por parte de usuarios no técnicos.Este estudio adopta un enfoque metodológico **cuantitativo**, con un diseño de tipo **predictivo**, cuyo objetivo principal es construir un modelo capaz de anticipar la pérdida de clientes (churn) en una empresa del sector de telecomunicaciones, a partir de variables asociadas a comportamiento, servicios contratados y características demográficas.
+
+La base de datos utilizada proviene de una fuente pública, específicamente del repositorio de Kaggle: *“Proyecto 2: Pérdida de clientes en Telco”*, disponible en el siguiente enlace:\
+<https://www.kaggle.com/datasets/datacertlaboratoria/sql-proyecto-2-prdida-de-clientes-en-telco>. Esta base contiene registros históricos de clientes de una empresa de telecomunicaciones, con variables que permiten caracterizar tanto el servicio recibido como el estado actual del cliente (activo o perdido).
+
+Durante la etapa de preprocesamiento se realizó una exploración inicial de la calidad de los datos, identificando registros incompletos, inconsistencias y datos atípicos. Se eliminaron un total de **21 registros** con valores faltantes críticos que no podían ser imputados de forma confiable. Asimismo, se realizaron **36 imputaciones** de valores faltantes mediante técnicas simples como la media (para variables numéricas) y la moda (para variables categóricas), en aquellos casos donde el porcentaje de datos faltantes era menor al 5%. También se transformaron variables categóricas a factores y se codificaron adecuadamente para el análisis en R.
+
+El análisis predictivo se fundamentó en el uso de **modelado estadístico** y **algoritmos de aprendizaje automático**, específicamente mediante la **regresión logística**, dada su capacidad para modelar una variable binaria dependiente (churn: sí/no). Esta técnica permite interpretar la influencia de distintas variables independientes sobre la probabilidad de que un cliente abandone la empresa. El rendimiento del modelo fue evaluado utilizando métricas como precisión, sensibilidad, especificidad y el área bajo la curva ROC (AUC).
+
+Para el desarrollo del proyecto se utilizaron herramientas del ecosistema R. El análisis de datos, visualización y modelado se realizaron en **R**, mientras que la interfaz de usuario para la presentación interactiva de resultados fue desarrollada en **Shiny**, permitiendo generar una aplicación web funcional que facilita la exploración del modelo y sus predicciones por parte de usuarios no técnicos.
+
+### 7. **Desarrollo / Análisis de resultados**
+
+-   
+
+-   
+
+    Exploración de datos (EDA)
+
+-   
+
+-   
+
+    Visualizaciones y hallazgos clave
+
+-   
+
+-   
+
+    Aplicación de modelos analíticos
+
+-   
+
+-   
+
+    Validación de resultados
+
+-   
+
+-   
+
+    Interpretación de hallazgos
+
+-   
+
+### 8. **Conclusiones y recomendaciones**
+
+-   Resumen de hallazgos más importantes
+
+    Cumplimiento de objetivos
+
+-    Implicaciones prácticas
+
+-   Recomendaciones para la organización o futuras investigaciones
+
+### 9. **Referencias bibliográficas**
+
+-    Estilo de citación (APA 7ª edición, IEEE, etc., según la universidad)
+
+### 10. **Anexos** (si aplica)
+
+-   Código fuente
+
+    Tablas adicionales
+
+    Formularios
+
+-   
+
+-   
+
+    Documentación técnica
+
+-   
+
+## 📌 Sugerencia de Títulos de Proyecto (por si necesitas ideas)
+
+-   
+
+-   
+
+    "Predicción de la rotación de empleados usando algoritmos de clasificación"
+
+-   
+
+-   
+
+    "Análisis de sentimiento aplicado a reseñas de productos"
+
+-   
+
+-   
+
+    "Optimización de campañas de marketing digital mediante clustering de clientes"
+
+-   
+
+-   
+
+    "Detección de fraude en transacciones financieras con técnicas de machine learning"
+
+-   
+
+-   
+
+    "Visualización interactiva de KPIs empresariales usando Power BI"
+
+-   
+
+¿Quieres que adapte esta estructura a una idea específica de proyecto que tengas? Puedo ayudarte a desarrollar el índice más a medida.Aquí tienes una **estructura de trabajo** sugerida para un **proyecto de grado** en una **especialización en Analítica de Datos**. Esta estructura puede adaptarse a los lineamientos de tu universidad, pero cubre los elementos esenciales que suelen ser requeridos.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
